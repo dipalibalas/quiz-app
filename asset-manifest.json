@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dipalibalas/quiz-app.git/static/css/main.cf16c883.css",
+    "main.js": "/dipalibalas/quiz-app.git/static/js/main.416d39ad.js",
+    "static/js/787.9e90ff23.chunk.js": "/dipalibalas/quiz-app.git/static/js/787.9e90ff23.chunk.js",
+    "index.html": "/dipalibalas/quiz-app.git/index.html",
+    "main.cf16c883.css.map": "/dipalibalas/quiz-app.git/static/css/main.cf16c883.css.map",
+    "main.416d39ad.js.map": "/dipalibalas/quiz-app.git/static/js/main.416d39ad.js.map",
+    "787.9e90ff23.chunk.js.map": "/dipalibalas/quiz-app.git/static/js/787.9e90ff23.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf16c883.css",
+    "static/js/main.416d39ad.js"
+  ]
+}
