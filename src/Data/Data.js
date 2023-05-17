@@ -1,0 +1,141 @@
+export default function Data() {
+  return [
+    {
+      id: 0,
+      level: "Easy",
+      series: "Javascript",
+      questionType: "text",
+      questionText: "Which type of JavaScript language is?",
+      questionImage: "",
+      options: [
+        "Object-Oriented",
+        "Object-Based",
+        "Assembly-language",
+        "High-level",
+      ],
+      answer: "Object-Based",
+    },
+    {
+      id: 1,
+      level: "Difficult",
+      series: "JavaScript",
+      questionType: "text",
+      questionText:
+        " Which one of the following also known as Conditional Expression:?",
+      questionImage: "",
+      options: [
+        "Alternative to if-else",
+        "Switch statement",
+        "If-then-else statement",
+        "immediate if",
+      ],
+      answer: "immediate if",
+    },
+    {
+      id: 2,
+      level: "Easy",
+      series: "Javascript",
+      questionType: "text",
+      questionText:
+        "When interpreter encounters an empty statements, what it will do?",
+      questionImage: "",
+      options: [
+        "Shows a warning",
+        "Prompts to complete the statement",
+        "Throws an error",
+        "Ignores the statements",
+      ],
+      answer: "Ignores the statements",
+    },
+    {
+      id: 3,
+      level: "Medium",
+      series: "CSS",
+      questionType: "text",
+      questionText:
+        "Which of the following tag is used to embed css in html page?",
+      questionImage: "",
+      options: ["<css>", "<!DOCTYPE html>", "<script>", "<style>"],
+      answer: "<style>",
+    },
+    {
+      id: 4,
+      level: "Medium",
+      series: "CSS",
+      questionType: "text",
+      questionText:
+        "Which of the following CSS framework is used to create a responsive design?",
+      questionImage: "",
+      options: ["django", "rails", "larawell", "bootstrap"],
+      answer: "bootstrap",
+    },
+    {
+      id: 5,
+      level: "Difficult",
+      series: "CSS",
+      questionType: "text",
+      questionText:
+        "Which of the following CSS property is used to make the text bold?",
+      questionImage: "",
+      options: [
+        "text-decoration: bold",
+        "font-weight: bold",
+        "font-style: bold",
+        "text-align: bold",
+      ],
+      answer: "font-weight: bold",
+    },
+    {
+      id: 6,
+      level: "Easy",
+      series: "CSS",
+      questionType: "text",
+      questionText:
+        "Which of the following are the CSS Extension Prefixes for Webkit?",
+      questionImage: "",
+      options: ["-chrome", "-web", "-o-", "-webkit"],
+      answer: "-webkit",
+    },
+    {
+      id: 7,
+      level: "Easy",
+      series: "HTML",
+      questionType: "text",
+      questionText: `HTML stands for -`,
+      questionImage: "",
+      options: [
+        "HighText Machine Language",
+        "HyperText and links Markup Language",
+        "HyperText Markup Language",
+        "All of the above",
+      ],
+      answer: "HyperText Markup Language",
+    },
+    {
+      id: 8,
+      level: "Difficult",
+      series: "HTML",
+      questionType: "text",
+      questionText:
+        "Which of the following tag is used for inserting the largest heading in HTML?",
+      questionImage: "",
+      options: ["<h1>", "<h3>", "<h5>", "<h6>"],
+      answer: "<h1>",
+    },
+    {
+      id: 9,
+      level: "Easy",
+      series: "HTML",
+      questionType: "text",
+      questionText: "How to insert an image in HTML?",
+      questionImage: "",
+      options: [
+        `<img href = "jtp.png" />`,
+        `<img url = "jtp.png" />`,
+        `<img link = "jtp.png" />`,
+        `<img src = "jtp.png" />`,
+      ],
+      answer: `<img src = "jtp.png" />`,
+    },
+  ];
+}

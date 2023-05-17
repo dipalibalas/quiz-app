@@ -1,0 +1,101 @@
+.instruction-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.start-popup {
+  height: 70%;
+  width: 70%;
+  box-shadow: 0 0 15px #ddd;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.instructions {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.instructions-title {
+  margin-bottom: 16px;
+}
+
+.instructions-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+}
+
+ul > li > p {
+  font-weight: 900;
+  font-size: 25px;
+  color: rgb(7, 64, 144);
+}
+
+p > span {
+  color: rgb(19, 90, 0);
+}
+
+strong {
+  color: red;
+}
+
+.start-button,
+.start-button:hover {
+  display: inline-block;
+  height: 40px;
+  width: 17%;
+  font-size: larger;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  border: #074090 solid 1px;
+}
+
+.start-button {
+  background-color: #074090;
+  color: #fff;
+}
+
+.start-button:hover {
+  background-color: #fff;
+  color: #074090;
+}
+
+@media (min-width: 551px) {
+  .instruction-container {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .instruction-container {
+    margin-top: 16px !important;
+  }
+
+  .start-popup {
+    box-shadow: 0 0 0px;
+  }
+
+  ul > li > p {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .start-button,
+  .start-button:hover {
+    height: 40px;
+    width: 40%;
+    margin: 5% 0;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+}
