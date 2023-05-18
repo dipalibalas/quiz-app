@@ -18,17 +18,29 @@ class QuestionCard extends React.Component {
         </div>
         <div className="question">Q. {questionText}</div>
         <div className="options-wrapper">
-          <ul>
-            <li onClick={(e) => this.props.selectedAnswer(e, id)}>
+          <ul className="option-list">
+            <li
+              onClick={(e) => this.props.selectedAnswer(e, id)}
+              className="answer-option"
+            >
               <span>{options[0]}</span>
             </li>
-            <li onClick={(e) => this.props.selectedAnswer(e, id)}>
+            <li
+              onClick={(e) => this.props.selectedAnswer(e, id)}
+              className="answer-option"
+            >
               <span>{options[1]}</span>
             </li>
-            <li onClick={(e) => this.props.selectedAnswer(e, id)}>
+            <li
+              onClick={(e) => this.props.selectedAnswer(e, id)}
+              className="answer-option"
+            >
               <span>{options[2]}</span>
             </li>
-            <li onClick={(e) => this.props.selectedAnswer(e, id)}>
+            <li
+              onClick={(e) => this.props.selectedAnswer(e, id)}
+              className="answer-option"
+            >
               <span>{options[3]}</span>
             </li>
           </ul>

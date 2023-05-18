@@ -12,6 +12,7 @@ class QuizBody extends React.Component {
       score: 0,
       currentQuestionId: 0,
       resetTimer: true,
+      correctAnswerList: [],
     };
   }
 
@@ -25,6 +26,9 @@ class QuizBody extends React.Component {
       score -= 1;
       this.setState({ score: score });
     }
+    this.setState({
+      correctAnswerList: [...this.state.correctAnswerList, answer],
+    });
     this.updateQuestion();
   };
 
@@ -48,7 +52,7 @@ class QuizBody extends React.Component {
       return (
         <div className="quiz-container">
           <div className="scoreTimerWrapper">
-            <span className="score">SCORE: {this.state.score}</span>
+            <span className="score">Score: {this.state.score}</span>
             <Timer
               resetTimer={this.state.resetTimer}
               updateQuestion={this.updateQuestion}
@@ -67,6 +71,18 @@ class QuizBody extends React.Component {
         <div className="quiz-container">
           <div className="endPopup">
             <p className="popup-score">Score: {this.state.score}</p>
+            <span className="score">Correct Answer: </span>
+            {this.state.correctAnswerList.length === 10 &&
+              console.log(this.state.correctAnswerList)}
+
+            {this.state.correctAnswerList.map((correctAnswer, index) => {
+              return (
+                <p key={index} className="answer-list">
+                  {correctAnswer}
+                </p>
+              );
+            })}
+
             <button onClick={this.reset} className="reset-button">
               RESET
             </button>
