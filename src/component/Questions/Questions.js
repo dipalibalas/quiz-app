@@ -73,6 +73,9 @@ class QuizBody extends React.Component {
             {this.state.score >= 20 && (
               <h3>Congratulations!! You have cleared the test.</h3>
             )}
+            {this.state.score < 20 && (
+              <h3>Sorry!! You have not cleared the test. Please try again.</h3>
+            )}
             <p className="popup-score">Score: {this.state.score}</p>
             <span className="score">Correct Answer: </span>
 
