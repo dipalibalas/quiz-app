@@ -22,13 +22,17 @@ class QuizBody extends React.Component {
     if (event.target.textContent === answer) {
       score += 3;
       this.setState({ score: score });
+      this.setState({
+        correctAnswerList: [...this.state.correctAnswerList, answer],
+      });
     } else {
       score -= 1;
       this.setState({ score: score });
+      this.setState({
+        correctAnswerList: [...this.state.correctAnswerList, answer],
+      });
     }
-    this.setState({
-      correctAnswerList: [...this.state.correctAnswerList, answer],
-    });
+
     this.updateQuestion();
   };
 
@@ -44,6 +48,7 @@ class QuizBody extends React.Component {
     this.setState({
       score: 0,
       currentQuestionId: 0,
+      correctAnswerList: [],
     });
   };
 
