@@ -70,10 +70,11 @@ class QuizBody extends React.Component {
       return (
         <div className="quiz-container">
           <div className="endPopup">
+            {this.state.score >= 20 && (
+              <h3>Congratulations!! You have cleared the test.</h3>
+            )}
             <p className="popup-score">Score: {this.state.score}</p>
             <span className="score">Correct Answer: </span>
-            {this.state.correctAnswerList.length === 10 &&
-              console.log(this.state.correctAnswerList)}
 
             {this.state.correctAnswerList.map((correctAnswer, index) => {
               return (
